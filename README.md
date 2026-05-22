@@ -288,7 +288,7 @@ This collection was assembled from multiple open-source skill repositories. Belo
 | `[E]` | `skilbro` (engineering) | Various — see table below | ~65 skills |
 | `[T]` | `skilbro2` (engineering-team) | Various — see table below | ~32 skills |
 | `[W]` | `skilbro3` (superpowers-main) | [obra/superpowers](https://github.com/obra/superpowers) | 14 skills |
-| `[F]` | `indian-financial-planning` | Original — Bhopal family portfolio project | 6 skills |
+| `[F]` | `indian-financial-planning` | Original — custom Indian financial planning skills | 6 skills |
 
 ---
 
@@ -317,7 +317,7 @@ All 14 workflow skills originate from [obra/superpowers](https://github.com/obra
 | Autonomous Research | `autoresearch-agent`, `setup`, `run`, `loop`, `resume`, `status` | [sickn33/antigravity](https://github.com/sickn33/antigravity) | Autonomous planning logic, experiment loops, agent-driven iteration |
 | Financial Analysis | `statistical-analyst`, `senior-data-engineer` | [anthropic-cookbooks](https://github.com/anthropics/anthropic-cookbook) | Ratio calculators, financial analysis suites |
 | Workflow System | All `[W]` skills (14 total) | [obra/superpowers](https://github.com/obra/superpowers) | 5-phase development workflow (Clarify → Design → Plan → Code → Verify) |
-| Indian Financial Planning | `indian-tax-regime-optimizer`, `indian-real-estate-bhopal`, `indian-mutual-fund-tax`, `senior-citizen-savings-scheme`, `family-portfolio-aggregator`, `lrs-foreign-investment-tax` | Original `[F]` — Bhopal family portfolio project | FY2025-26 tax law, MP stamp duty, SCSS, LRS/TCS, DTAA; includes stdlib-only Python calculators |
+| Indian Financial Planning | `indian-tax-regime-optimizer`, `indian-real-estate-bhopal`, `indian-mutual-fund-tax`, `senior-citizen-savings-scheme`, `family-portfolio-aggregator`, `lrs-foreign-investment-tax` | Original `[F]` — custom Indian financial planning skills | FY2025-26 tax law, MP stamp duty, SCSS, LRS/TCS, DTAA; includes stdlib-only Python calculators |
 
 ---
 

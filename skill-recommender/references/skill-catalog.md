@@ -4,7 +4,7 @@ Skills come from four sources:
 - **[E]** = Engineering skills (skilbro — claude-skills-main/engineering)
 - **[T]** = Engineering-Team skills (skilbro2 — claude-skills-main/engineering-team)
 - **[W]** = Workflow/Superpowers skills (skilbro3 — superpowers-main)
-- **[F]** = Indian Financial Planning skills (built for the Bhopal family portfolio project)
+- **[F]** = Indian Financial Planning skills (custom Indian financial planning skills)
 
 ---
 
