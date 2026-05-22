@@ -1,0 +1,411 @@
+{
+  "_metadata": {
+    "version": "1.0.0",
+    "last_updated": "2026-05-22",
+    "source": "Perplexity Deep Research, Runs 1-3, May 2026",
+    "next_scheduled_review": "2027-02-01",
+    "disclaimer": "Verify all values with a SEBI-registered CA before acting. Rules change yearly."
+  },
+
+  "lrs_rules": {
+    "annual_limit_usd": 250000,
+    "limit_per": "resident_individual_per_FY",
+    "fy_period": "April 1 to March 31",
+    "governing_master_direction": "RBI Master Direction No. 7/2015-16",
+    "last_significant_amendment": "2024-09-06 (A.P. DIR Series Circular No. 16)",
+    "permitted_assets": [
+      "Foreign equity shares",
+      "Foreign ETFs (delivery only)",
+      "Foreign mutual funds",
+      "Foreign currency bank account",
+      "Property abroad (with conditions)",
+      "Bona fide WOS/JV abroad",
+      "IFSC investments via FCA"
+    ],
+    "prohibited_activities": [
+      "US Options trading",
+      "US Futures trading",
+      "Margin/leveraged trading",
+      "Forex spot with unauthorised platforms",
+      "Cryptocurrency (not recognised by RBI)",
+      "Short selling abroad"
+    ],
+    "source_urls": [
+      "https://fema.rbi.org.in",
+      "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx"
+    ]
+  },
+
+  "tcs_rules": {
+    "current_fy": "2025-26",
+    "threshold_inr": 1000000,
+    "threshold_changed_date": "2025-04-01",
+    "threshold_previous": 700000,
+    "governing_section": "Section 206C(1G) IT Act 1961 / Section 506 ITA 2025",
+    "rates_by_purpose": {
+      "education_loan_sec80E": {"current": 0.0, "from_april_2026": 0.0},
+      "education_self_funded": {"current_above_threshold": 0.05, "from_april_2026": 0.02},
+      "medical_self_funded": {"current_above_threshold": 0.05, "from_april_2026": 0.02},
+      "investment_other_LRS": {"current_above_threshold": 0.20, "from_april_2026": 0.20},
+      "overseas_tour_package": {"current": "0.05 up to 10L, 0.20 above", "from_april_2026": "0.02 flat no threshold"}
+    },
+    "is_refundable": true,
+    "claim_method": "Schedule TCS in ITR-2 or ITR-3",
+    "applies_to_mf_fofs": false,
+    "applies_to_gift_city": true
+  },
+
+  "capital_gains_rules": {
+    "foreign_stocks_and_etfs": {
+      "classification": "unlisted_securities",
+      "governing_provision": "Third proviso to Section 2(42A); Section 112",
+      "ltcg_holding_period_months": 24,
+      "ltcg_rate_pct": 12.5,
+      "ltcg_indexation": false,
+      "ltcg_exemption_inr": 0,
+      "stcg_rate": "investor_slab_rate",
+      "effective_date": "2024-07-23",
+      "previous_ltcg_rate": "20% with indexation",
+      "previous_holding_period": 36,
+      "surcharge_max_pct": 15,
+      "cess_pct": 4,
+      "effective_max_ltcg_pct": 14.95
+    },
+    "indian_mf_fof_post_april2023": {
+      "section": "Section 50AA",
+      "definition": "Specified Mutual Fund (not more than 35% domestic equity)",
+      "ltcg_treatment": "treated_as_stcg_regardless_of_holding",
+      "ltcg_rate": "slab_rate",
+      "stcg_rate": "slab_rate",
+      "indexation": false,
+      "ltcg_exemption_inr": 0
+    },
+    "indian_mf_fof_pre_april2023": {
+      "ltcg_holding_period_months": 24,
+      "ltcg_rate_pct": 12.5,
+      "ltcg_indexation": false,
+      "stcg_rate": "slab_rate",
+      "effective_date": "2024-07-23"
+    },
+    "loss_setoff_rules": {
+      "stcl_setoff": "against_stcg_and_ltcg_any_class",
+      "ltcl_setoff": "only_against_ltcg",
+      "carry_forward_years": 8
+    }
+  },
+
+  "dtaa_rates": {
+    "USA": {
+      "exists": true, "type": "FULL",
+      "dividend_portfolio_pct": 25, "dividend_corporate_pct": 15,
+      "us_capital_gains_for_indian_pct": 0,
+      "signed": "1989-09-12", "last_amended": "1994-10-01",
+      "source": "https://incometaxindia.gov.in/dtaa/108690000000000099.htm",
+      "w8ben_validity_years": 3,
+      "us_tax_return_required": false
+    },
+    "JAPAN": {
+      "exists": true, "type": "FULL",
+      "dividend_portfolio_pct": 10, "dividend_corporate_pct": 10,
+      "signed": "1969-01-05", "last_amended": "2016",
+      "capital_gains": "residence_based"
+    },
+    "SOUTH_KOREA": {
+      "exists": true, "type": "FULL_REVISED",
+      "dividend_portfolio_pct": 10, "dividend_corporate_pct": 10,
+      "signed": "2015-05-18", "in_force": "2016-09-12", "effective_india": "2017-04-01",
+      "capital_gains": "source_based_above_5pct_stake_else_residence"
+    },
+    "TAIWAN": {
+      "exists": true, "type": "SECTION_90A",
+      "dividend_portfolio_pct": 10, "dividend_corporate_pct": 10,
+      "signed": "2009", "in_force": "2011-08-12", "effective_india": "2012-04-01",
+      "mechanism": "Taipei Economic and Cultural Centre <-> India-Taipei Association",
+      "note": "Operative under Section 90A despite no formal diplomatic recognition"
+    },
+    "VIETNAM": {
+      "exists": true, "type": "FULL",
+      "dividend_portfolio_pct": 10,
+      "signed": "1994-09-07", "in_force": "1995-02-02", "last_amended": "2017-08-30"
+    },
+    "INDONESIA": {
+      "exists": true, "type": "FULL_REVISED",
+      "dividend_portfolio_pct": 10,
+      "signed": "2012-07-27", "in_force": "2016-02-05",
+      "capital_gains": "source_based"
+    },
+    "AUSTRALIA": {
+      "exists": true, "type": "FULL",
+      "dividend_portfolio_pct": 15,
+      "signed": "1991-07-25", "in_force": "1991-12-30",
+      "note": "Highest dividend WHT among major Indian DTAAs; 1991 treaty not yet renegotiated"
+    },
+    "SAUDI_ARABIA": {
+      "exists": true, "type": "FULL",
+      "dividend_portfolio_pct": 10, "dividend_corporate_pct": 5,
+      "signed": "2006-01-25", "in_force": "2006-11-01",
+      "note": "Saudi has no personal income tax on individuals"
+    },
+    "GERMANY": {
+      "exists": true, "type": "FULL",
+      "dividend_portfolio_pct": 10,
+      "in_force": "1996-10-26", "mli_modified": "2020-04-01",
+      "capital_gains": "residence_based"
+    },
+    "SINGAPORE": {
+      "exists": true, "type": "FULL",
+      "dividend_portfolio_pct": 10,
+      "signed": "1994", "third_protocol": "2016-12-30", "effective": "2017-04-01",
+      "capital_gains": "source_based_for_indian_shares"
+    },
+    "HONG_KONG": {
+      "exists": true, "type": "FULL",
+      "dividend_portfolio_pct": 5,
+      "signed": "2018-03-19", "in_force": "2018-11-30", "effective_india": "2019-04-01",
+      "note": "Lowest dividend WHT in research set"
+    },
+    "CHINA": {
+      "exists": true, "type": "FULL",
+      "dividend_portfolio_pct": 10,
+      "signed": "1994-07-26", "protocol": "2018",
+      "capital_gains": "source_based",
+      "vie_risk_flag": true,
+      "vie_status": "Tolerated but regulated under CSRC filing regime since 2023-03-31"
+    },
+    "ISRAEL": {
+      "exists": true, "type": "FULL",
+      "dividend_portfolio_pct": 10,
+      "signed": "1996", "protocol": "2015-10-14", "in_force": "2016-12-19"
+    }
+  },
+
+  "market_access_routes": {
+    "USA": {
+      "direct_retail": true,
+      "primary_platforms": ["Vested", "INDmoney", "Winvesta", "Groww", "ICICI Direct"],
+      "gift_city_route": "NSE IFSC UDRs (~50 S&P 500 stocks)",
+      "complexity": "EASY"
+    },
+    "JAPAN": {
+      "direct_retail": false,
+      "best_route": "EWJ ETF or Japanese ADRs on NYSE (Toyota, Sony)",
+      "complexity": "MODERATE"
+    },
+    "SOUTH_KOREA": {
+      "direct_retail": "complex",
+      "best_route": "EWY ETF via US brokerage",
+      "complexity": "MODERATE"
+    },
+    "TAIWAN": {
+      "direct_retail": false,
+      "best_route": "TSM ADR on NYSE; EWT ETF",
+      "complexity": "COMPLEX",
+      "diplomatic_note": "One China Policy creates account-opening barriers"
+    },
+    "VIETNAM": {
+      "direct_retail": "improving",
+      "best_route": "VNM ETF via US brokerage; direct via global brokers post Feb 2026",
+      "ftse_upgrade": "Reclassified secondary emerging market effective Sept 2026",
+      "new_circular": "Circular 08/2026/TT-BTC effective 2026-02-03",
+      "complexity": "MODERATE"
+    },
+    "INDONESIA": {
+      "direct_retail": "via_ibkr",
+      "best_route": "EIDO ETF",
+      "complexity": "COMPLEX"
+    },
+    "AUSTRALIA": {
+      "direct_retail": true,
+      "best_route": "IBKR for direct ASX; EWA ETF",
+      "complexity": "MODERATE_EASY"
+    },
+    "SAUDI_ARABIA": {
+      "direct_retail": true,
+      "major_change_date": "2026-02-01",
+      "change_description": "QFI requirement abolished; all foreign retail can directly invest",
+      "best_route": "Global brokers (IBKR) or KSA ETF",
+      "complexity": "MODERATE"
+    },
+    "HONG_KONG": {
+      "direct_retail": "via_ibkr",
+      "best_route": "IBKR for direct HKEX; EWH ETF",
+      "complexity": "MODERATE"
+    },
+    "GIFT_CITY": {
+      "direct_retail": true,
+      "regulator": "IFSCA",
+      "exchanges": ["NSE IFSC", "India INX"],
+      "available_securities": "~50 S&P 500 stocks as UDRs",
+      "trading_hours_ist": "19:00-01:30",
+      "lrs_applies": true,
+      "tax_exemption": "Section 10(4D) for non-residents only — residents pay normal LRS CGT"
+    }
+  },
+
+  "platform_registry": {
+    "INDmoney": {
+      "sebi_reg": "INZ000305337",
+      "ifsca_reg": "IFSCA/GAP/BD/2025-26/002",
+      "us_custodians": ["DriveWealth", "Alpaca"],
+      "fractional_shares": true,
+      "min_investment_usd": 1,
+      "public_api": false
+    },
+    "Vested": {
+      "sebi_reg": "operates via SEBI distributors",
+      "us_sec_ria_reg": true,
+      "us_custodian": "DriveWealth",
+      "fractional_shares": true,
+      "min_investment_usd": 1,
+      "public_api": false
+    },
+    "Winvesta": {
+      "uk_fca_regulated": true,
+      "us_custodian": "DriveWealth",
+      "fractional_shares": true,
+      "min_investment_usd": 1
+    },
+    "Groww": {
+      "sebi_reg_domestic": true,
+      "us_custodian": "DriveWealth (reported)",
+      "fractional_shares": true
+    },
+    "NSE_IFSC": {
+      "regulator": "IFSCA",
+      "min_investment": "fractional permitted",
+      "trading_hours_ist": "19:00-01:30",
+      "available_instruments": "~50 US stock UDRs"
+    }
+  },
+
+  "filing_forms": {
+    "Form_W8BEN": {
+      "purpose": "US tax treaty benefits — 25% not 30% dividend WHT",
+      "validity_years": 3,
+      "expires": "Dec 31 of (year_signed + 3)",
+      "issuer": "Indian investor → US broker"
+    },
+    "Form_67": {
+      "purpose": "Claim foreign tax credit (DTAA)",
+      "governing_rule": "Rule 128 IT Rules 1962",
+      "deadline": "End of relevant AY (i.e., 31 March of AY)",
+      "best_practice": "File simultaneously with ITR",
+      "amendment_notification": "CBDT Notification 100/2022"
+    },
+    "Schedule_FA": {
+      "purpose": "Foreign Assets Disclosure",
+      "applicable_itr": ["ITR-2", "ITR-3"],
+      "period_basis": "Calendar Year (Jan-Dec), NOT FY",
+      "mandatory_even_below_taxable": true,
+      "penalty_threshold_inr": 2000000,
+      "penalty_threshold_changed": "2024-10-01",
+      "penalty_per_year_inr": 1000000,
+      "max_imprisonment_years": 7
+    },
+    "Form_10FA_10FB": {
+      "purpose": "Tax Residency Certificate",
+      "validity": "1 FY",
+      "processing_time_days": "15-30 working"
+    },
+    "Form_A2": {
+      "purpose": "FEMA outward remittance declaration",
+      "submitted_to": "AD Category-I bank",
+      "online": true
+    }
+  },
+
+  "key_thresholds_and_rates": {
+    "lrs_annual_limit_usd": 250000,
+    "tcs_threshold_inr": 1000000,
+    "tcs_rate_investment_pct": 20,
+    "ltcg_foreign_stocks_pct": 12.5,
+    "ltcg_holding_period_months": 24,
+    "black_money_act_penalty_threshold_inr": 2000000,
+    "us_dividend_wht_pct": 25,
+    "w8ben_validity_years": 3,
+    "ltcg_exemption_indian_equity_inr": 125000,
+    "ltcg_exemption_foreign_inr": 0
+  },
+
+  "monitoring_sources": {
+    "rbi_circulars": {
+      "url": "https://www.rbi.org.in/Scripts/BS_CircularIndexDisplay.aspx",
+      "format": "HTML",
+      "frequency": "as_issued",
+      "method": "scrape_or_email_alert"
+    },
+    "sebi_rss": {
+      "url": "https://www.sebi.gov.in/sebirss.xml",
+      "format": "RSS_XML",
+      "frequency": "real_time"
+    },
+    "cbdt_rss": {
+      "url": "https://www.incometaxindia.gov.in/miscellaneous-communications-rss-feed",
+      "format": "RSS_XML",
+      "frequency": "real_time"
+    },
+    "finance_bill_annual": {
+      "url": "https://www.indiabudget.gov.in/doc/Finance_Bill.pdf",
+      "format": "PDF",
+      "frequency": "annual_feb_1"
+    },
+    "egazette": {
+      "url": "https://egazette.gov.in",
+      "format": "PDF",
+      "frequency": "as_published",
+      "api_available": false
+    },
+    "amfi_nav": {
+      "url": "https://www.amfiindia.com/spages/NAVAll.txt",
+      "format": "pipe_delimited_text",
+      "frequency": "daily_by_2300_ist"
+    },
+    "mfapi_in": {
+      "url_template": "https://api.mfapi.in/mf/{scheme_code}/latest",
+      "format": "JSON",
+      "frequency": "6x_daily",
+      "auth": "none"
+    },
+    "rbi_dbie": {
+      "url": "https://data.rbi.org.in",
+      "format": "CSV_Excel",
+      "frequency": "monthly_2_month_lag"
+    },
+    "fbil_usd_inr": {
+      "url": "https://www.fbil.org.in",
+      "format": "HTML",
+      "frequency": "daily_1330_ist"
+    },
+    "ishares_holdings_template": {
+      "url_pattern": "https://www.ishares.com/us/products/{fund_id}/",
+      "format": "CSV_download",
+      "frequency": "daily"
+    }
+  },
+
+  "ishares_etf_fund_ids": {
+    "EWJ": "239665", "EWY": "239640", "EWT": "239759",
+    "EWA": "239605", "EIDO": "239669", "VNM": "vaneck",
+    "EWH": "239625", "KSA": "271542", "MCHI": "239619"
+  },
+
+  "current_risks_flags": {
+    "sebi_overseas_mf_cap_status": {
+      "value": "nearly_exhausted",
+      "as_of": "2026-05",
+      "impact": "Multiple international FoF schemes suspended for fresh inflows",
+      "monitor": "AMC scheme notices"
+    },
+    "china_vie_risk": "HIGH",
+    "taiwan_diplomatic": "MODERATE",
+    "australia_dtaa_age": "1991 treaty — outdated; 15% div WHT"
+  },
+
+  "upcoming_changes_calendar": {
+    "2026-02-01": "Saudi Arabia: All foreign retail can invest in Tadawul directly",
+    "2026-02-03": "Vietnam: Circular 08/2026 — global broker access opens",
+    "2026-04-01": "TCS education/medical reduced to 2%; ITA 2025 fully in force",
+    "2026-09": "Vietnam: FTSE secondary emerging market upgrade",
+    "2027-02-01": "Next Union Budget — check for further rate changes"
+  }
+}
