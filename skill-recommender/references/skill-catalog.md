@@ -1,9 +1,10 @@
-# Skill Catalog — 111 Skills
+# Skill Catalog — 117 Skills
 
-Skills come from three sources:
+Skills come from four sources:
 - **[E]** = Engineering skills (skilbro — claude-skills-main/engineering)
 - **[T]** = Engineering-Team skills (skilbro2 — claude-skills-main/engineering-team)
 - **[W]** = Workflow/Superpowers skills (skilbro3 — superpowers-main)
+- **[F]** = Indian Financial Planning skills (built for the Bhopal family portfolio project)
 
 ---
 
@@ -28,6 +29,7 @@ Skills come from three sources:
 18. [Productivity & Tooling](#productivity--tooling)
 19. [Automation & Browser](#automation--browser)
 20. [Communication & Human Touch](#communication--human-touch)
+21. [Indian Financial Planning](#indian-financial-planning)
 
 ---
 
@@ -547,4 +549,32 @@ _Use when:_ Unsure which command or tool to use; need to pick an agent/skill for
 
 ---
 
-*Total: 111 skills — 65 [E] Engineering + 32 [T] Engineering-Team + 14 [W] Workflow*
+## Indian Financial Planning
+
+**`indian-tax-regime-optimizer`** [F]
+Computes Indian income tax under both old and new regimes for FY 2025-26, enforces statutory deduction caps (80C ₹1.5L, 80CCD(1B) ₹50K, 80D age-based, 80TTB ₹50K senior-only), handles general/senior/super-senior slabs, applies Section 87A rebates, adds 4% cess, recommends optimal regime.
+_Use when:_ Old vs new regime question, "which regime saves more", computing Indian income tax, 80C/80D/80TTB planning, Form 10-IEA, senior-citizen tax slabs. Verified May 2026 against Finance Act 2024/2025.
+
+**`indian-real-estate-bhopal`** [F]
+Indian real estate tax + transaction planning, MP-focused. MP stamp duty (10.5% total), capital gains grandfathering decision (Path A 12.5% no-index vs Path B 20%+indexation), Section 50C deemed value check, exemption recommender (54/54EC/54F/54B), REIT distribution classifier, Section 24 rental income, TDS calculations (194-IA, 194-IB, 194-I), Bhopal agricultural land Section 2(14)(iii) classification.
+_Use when:_ Buying/selling/renting Indian property, stamp duty, capital gains on property, indexation, Section 54 exemptions, REIT tax, agricultural land, SAMPADA, MP-RERA. CII rates need annual June verification.
+
+**`indian-mutual-fund-tax`** [F]
+Indian MF tax calculator with Section 50AA debt-trap detector. Equity LTCG (12.5% above ₹1.25L), Section 50AA proactive warning for debt MFs/gold FoFs/intl FoFs purchased post April 2023, ELSS per-SIP lock-in tracking (36 months per installment), hybrid fund 65% equity threshold classification.
+_Use when:_ MF tax planning, debt MF taxation, ELSS lock-in, hybrid fund classification, "Section 50AA" trap, gold MF vs gold ETF decision. Always trigger when user mentions debt MF purchased after April 2023.
+
+**`senior-citizen-savings-scheme`** [F]
+SCSS planner for retirees (60+). Quarterly cashflow at current 8.20% rate (Q1 FY 2026-27), TDS implications with ₹1L senior threshold from April 2025, 80TTB and 80C eligibility, premature withdrawal penalties (<1yr no interest, 1-2yr 1.5%, 2-5yr 1%), post-tax yield comparison vs FRSB/PO TD/bank FD.
+_Use when:_ SCSS planning, safe income for parents/retirees, quarterly retirement income, Form 15H, 80TTB deduction. Re-verify rate quarterly (1 Apr / 1 Jul / 1 Oct / 1 Jan).
+
+**`family-portfolio-aggregator`** [F]
+Multi-member household portfolio rollup. Per-member totals, asset allocation breakdown (7 classes), drift detection vs age-based target allocations, concentration warnings for any single holding > 25% family NW, annual income projection per member.
+_Use when:_ Family/household portfolio review, consolidated investment view, asset allocation drift, rebalancing, concentration risk across spouse/parents/children. Orchestrates other Indian-financial skills.
+
+**`lrs-foreign-investment-tax`** [F]
+LRS + foreign equity tax for Indian residents investing abroad. Three modules: TCS calculator (20% above ₹10L/FY, refundable), DTAA lookup for 8 countries + Form 67 foreign tax credit math (Rule 128), Section 112 foreign stock LTCG (12.5% after 24 months post Budget 2024). Includes Schedule FA mandatory disclosure reminder (₹10L penalty under Black Money Act).
+_Use when:_ Investing in US/Japan/Singapore stocks from India, LRS, TCS, DTAA, Form 67, W-8BEN, foreign capital gains, Schedule FA. Always trigger when any non-Indian equity holding is mentioned.
+
+---
+
+*Total: 117 skills — 65 [E] Engineering + 32 [T] Engineering-Team + 14 [W] Workflow + 6 [F] Indian Financial Planning*

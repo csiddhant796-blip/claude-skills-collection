@@ -1,6 +1,6 @@
 # Claude Skills Collection
 
-A curated collection of 111+ Claude agent skills organized for use with [Claude Code](https://claude.ai/code) and Cowork. These skills extend Claude's capabilities across engineering, DevOps, security, ML, databases, productivity, and more.
+A curated collection of 117+ Claude agent skills organized for use with [Claude Code](https://claude.ai/code) and Cowork. These skills extend Claude's capabilities across engineering, DevOps, security, ML, databases, productivity, Indian financial planning, and more.
 
 **Maintainer:** [csiddhant796-blip](https://github.com/csiddhant796-blip) · csiddhant796@gmail.com
 
@@ -243,6 +243,19 @@ Or just describe your task — the `skill-recommender` skill (included) will sug
 | `behuman` | Rewrites AI-sounding text to sound genuinely human | Polishing AI-generated copy to be less robotic |
 | `command-guide` | Generates clear CLI command reference guides | Documenting command-line tools |
 
+### 21. Indian Financial Planning (6 skills) `[F]`
+
+Skills purpose-built for Indian tax law, investment instruments, and the regulatory framework governing NRI/LRS transactions. All calculations are current for FY2025-26.
+
+| Skill | What It Does | Use When |
+|-------|-------------|----------|
+| `indian-tax-regime-optimizer` | Compares old vs. new tax regime side-by-side for FY2025-26; calculates breakeven deduction threshold; recommends the better regime with exact tax savings | Deciding which regime to file under, or advising a family member |
+| `indian-real-estate-bhopal` | Handles MP stamp duty (10.5%), Circle Rate lookups, Section 54/54B/54EC/54F capital gains exemptions, TDS 194-IA (1% buyer deduction), and sale-vs-hold NPV analysis | Buying, selling, or inheriting agricultural/residential property in Madhya Pradesh |
+| `indian-mutual-fund-tax` | Calculates STCG/LTCG across equity, debt, and hybrid funds post-Finance Act 2023; flags the Section 50AA "debt-trap" on market-linked debentures; models SWP tax efficiency | Tax planning for a mutual fund portfolio, especially debt or hybrid funds |
+| `senior-citizen-savings-scheme` | Models SCSS at 8.20% (Q1 FY2026-27) with quarterly payouts, TDS 194A thresholds, Form 15H filing, 80C deduction, and premature closure penalties; compares against FD and RBI bonds | Senior citizens or their children planning safe, government-backed income |
+| `family-portfolio-aggregator` | Aggregates 7 asset classes (equity MF, debt MF, PPF, SCSS, real estate, gold, NPS) across multiple family members; checks age-based allocation targets; detects drift and suggests rebalancing | Reviewing or rebalancing a multi-member family investment portfolio |
+| `lrs-foreign-investment-tax` | Handles TCS 206C(1G) at 20% on LRS remittances above ₹7L, DTAA offset guidance for 8 countries, FEMA compliance, Form 67 for claiming foreign tax credits, and Section 112 LTCG 12.5% on foreign assets | Indian residents investing abroad, NRIs, or anyone remitting funds overseas |
+
 ---
 
 ## Installation
@@ -275,6 +288,7 @@ This collection was assembled from multiple open-source skill repositories. Belo
 | `[E]` | `skilbro` (engineering) | Various — see table below | ~65 skills |
 | `[T]` | `skilbro2` (engineering-team) | Various — see table below | ~32 skills |
 | `[W]` | `skilbro3` (superpowers-main) | [obra/superpowers](https://github.com/obra/superpowers) | 14 skills |
+| `[F]` | `indian-financial-planning` | Original — Bhopal family portfolio project | 6 skills |
 
 ---
 
@@ -303,6 +317,7 @@ All 14 workflow skills originate from [obra/superpowers](https://github.com/obra
 | Autonomous Research | `autoresearch-agent`, `setup`, `run`, `loop`, `resume`, `status` | [sickn33/antigravity](https://github.com/sickn33/antigravity) | Autonomous planning logic, experiment loops, agent-driven iteration |
 | Financial Analysis | `statistical-analyst`, `senior-data-engineer` | [anthropic-cookbooks](https://github.com/anthropics/anthropic-cookbook) | Ratio calculators, financial analysis suites |
 | Workflow System | All `[W]` skills (14 total) | [obra/superpowers](https://github.com/obra/superpowers) | 5-phase development workflow (Clarify → Design → Plan → Code → Verify) |
+| Indian Financial Planning | `indian-tax-regime-optimizer`, `indian-real-estate-bhopal`, `indian-mutual-fund-tax`, `senior-citizen-savings-scheme`, `family-portfolio-aggregator`, `lrs-foreign-investment-tax` | Original `[F]` — Bhopal family portfolio project | FY2025-26 tax law, MP stamp duty, SCSS, LRS/TCS, DTAA; includes stdlib-only Python calculators |
 
 ---
 
@@ -333,6 +348,11 @@ Structured, hypothesis-driven debugging before proposing fixes. From the obra/su
 
 ### `senior-architect`
 Full senior software architect persona with deep knowledge of ADRs, trade-off analysis, distributed systems design, and technology selection.
+
+### Indian Financial Planning Skills `[F]` *(new in v1.1)*
+Six original skills covering the full Indian financial planning stack — tax regime comparison, Madhya Pradesh real estate (stamp duty + capital gains exemptions), mutual fund taxation, SCSS for senior citizens, multi-member family portfolio aggregation, and LRS/TCS for foreign investments. All calculations are current for FY2025-26 and include stdlib-only Python calculators with no external dependencies.
+
+> *"Use the `family-portfolio-aggregator` skill to review our family's investments across equity, debt, real estate and gold"*
 
 ---
 
